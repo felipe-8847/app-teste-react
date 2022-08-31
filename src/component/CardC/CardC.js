@@ -11,7 +11,7 @@ import Card from 'react-bootstrap/Card';
 class BasicExample extends Component {
   render () {
    
-    return <Card style={{ width: '18rem' }}>
+    return <Card style={{ width: '18rem' , margin: "10px 10px 10px 10px"}}>
             <Card.Img variant="top" src={this.props.img}/>
             <Card.Body>
               <Card.Title>{this.props.titulo}</Card.Title>
