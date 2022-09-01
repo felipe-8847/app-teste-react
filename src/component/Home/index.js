@@ -1,10 +1,12 @@
 import React from "react";
-import BasicExample from "../Card/Card"
-//import BasicExampleC from "../CardC/CardC"
-import UncontrolledExample from "../Carousels/Carousels"
+import BasicExample from "../Card"
+//import BasicExampleC from "../CardC/CardC"  // exemplo com class component
+import UncontrolledExample from "../Carousels"
 import  'bootstrap/dist/css/bootstrap.min.css';
-import {CardDiv} from '../../styles'
-import TextLinkExample from '../header/header'
+import {CardDiv , Carrosell} from '../../styles'
+import TextLinkExample from '../header'
+
+
 
 // lista de objetos a ser apresentado na tela do usuario
 const lista = [
@@ -19,9 +21,9 @@ function Home() {
   return (
 
     <div>
-        <TextLinkExample/>
+        <TextLinkExample nome="Formulario" link="formulario"/>
 
-        <UncontrolledExample  styles={{ width: "200px"}} lista={lista}/> 
+        <UncontrolledExample lista={lista}/> 
 
         <CardDiv>
             {lista.map((e)=> (
